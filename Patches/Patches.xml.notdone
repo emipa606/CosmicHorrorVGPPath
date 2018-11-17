@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch> 
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="ElectricStove" or defName="FueledStove"]/recipes</xpath>
+	<value>
+      <li>ROM_CookStrangeMealSimple</li>
+      <li>ROM_CookStrangeMealFine</li>
+      <li>ROM_CookStrangeMealLavish</li>
+      <li>STR_CookStrangeMealSurvival</li>
+      <li>STR_MakeStrangePemmican</li>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Campfire" or defName="HandCanningstove" or defName="Canningstove"]/recipes</xpath>
+	<value>
+      <li>ROM_CookStrangeMealSimpleCampfire</li>
+      <li>STR_MakeStrangePemmicanCampfire</li>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="ROM_StrangeMealSimple" or defName="ROM_StrangeMealFine" or defName="ROM_StrangeMealLavish"]/thingCategories</xpath>
+	<value>
+      <li>StrangeMeals</li>
+	</value>
+  </Operation>
+
+</Patch>
