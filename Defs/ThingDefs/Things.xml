@@ -260,7 +260,7 @@
     <ingestible>
       <foodType>Meat</foodType>
       <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
-      <optimalityOffsetStrangelikes>-10</optimalityOffsetStrangelikes>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
 	  <optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
       <ingestEffect>EatVegetarian</ingestEffect>
       <preferability>MealAwful</preferability>
@@ -292,7 +292,7 @@
       <preferability>MealSimple</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
-	  <optimalityOffsetStrangelikes>6</optimalityOffsetStrangelikes>
+	  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 	</ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
@@ -327,7 +327,7 @@
     <ingestible>
       <preferability>MealSimple</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
-      <optimalityOffsetStrangelikes>-5</optimalityOffsetStrangelikes>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
