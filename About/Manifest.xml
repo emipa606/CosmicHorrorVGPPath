@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>CosmicHorrorVGPPath</identifier>
+  <version>1.0.1.0</version>
+  <dependencies>
+    <li>Call of Cthulhu - Cosmic Horrors</li>
+    <li>VGP Garden Gourmet</li>
+    <li>VGP Vegetable Garden</li>
+  </dependencies>
+  <incompatibleWith />
+  <loadBefore />
+  <loadAfter>
+    <li>Call of Cthulhu - Cosmic Horrors</li>
+    <li>VGP Garden Gourmet</li>
+    <li>VGP Vegetable Garden</li>
+  </loadAfter>
+  <manifestUri>https://raw.githubusercontent.com/emipa606/CosmicHorrorVGPPath/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/emipa606/CosmicHorrorVGPPath/releases</downloadUri>
+</Manifest>
