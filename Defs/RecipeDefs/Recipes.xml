@@ -622,6 +622,12 @@
 	<RecipeDef ParentName="STR_MakestrangePemmican">
     <defName>STR_MakeStrangePemmicanCampfire</defName>
     <workAmount>1400</workAmount>
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+  	    <li>Campfire</li>
+ 	    <li>VG_Campfire</li>
+   </recipeUsers>
   </RecipeDef>
 
 	<!-- Survival Meal -->
@@ -660,7 +666,13 @@
     <skillRequirements>
 	  <Cooking>8</Cooking>
     </skillRequirements>
-    <researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+    <researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>	
+	<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+  	    <li>Campfire</li>
+ 	    <li>VG_Campfire</li>
+   </recipeUsers>
   </RecipeDef>
   
 </Defs>
