@@ -2,10 +2,12 @@
 <ModMetaData>
 
 	<name>Cosmic Horrors VGP Meal Patch</name>
+	<packageId>Mlie.CosmicHorrorVGPPath</packageId>
 	<author>Mlie</author>
 	<url>https://github.com/emipa606/CosmicHorrorVGPPath</url>
 	<supportedVersions>
 		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
 	<description>Adds strange versions of all Vegetable Garden Project-meals.
 
