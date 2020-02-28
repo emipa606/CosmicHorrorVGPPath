@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-  <identifier>RePowerVGPPatch</identifier>
-  <version>1.0.6.0</version>
+  <identifier>CosmicHorrorVGPPath</identifier>
+  <version>1.0.5.0</version>
   <dependencies>
-    <li>RePowerReborn</li>
+    <li>CoC-CosmicHorrors</li>
     <li>VGPGardenGourmet</li>
-    <li>VGPGardenFabrics</li>
+    <li>VGPVegetableGarden</li>
   </dependencies>
   <incompatibleWith />
   <loadBefore />
   <loadAfter>
-    <li>RePowerReborn</li>
+    <li>CoC-CosmicHorrors</li>
     <li>VGPGardenGourmet</li>
-    <li>VGPGardenFabrics</li>
+    <li>VGPVegetableGarden</li>
   </loadAfter>
-  <manifestUri>https://raw.githubusercontent.com/emipa606/RePowerPatches/master/RePowerVGPPatch/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/emipa606/RePowerPatches/tree/master/RePowerVGPPatch</downloadUri>
+  <manifestUri>https://raw.githubusercontent.com/emipa606/CosmicHorrorVGPPath/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/emipa606/CosmicHorrorVGPPath/releases</downloadUri>
 </Manifest>
