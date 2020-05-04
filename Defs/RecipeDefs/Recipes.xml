@@ -1,219 +1,265 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<!-- Stirfry -->
-	<RecipeDef ParentName="CookMealBase" Name="STR_Stirfrymeal">
-		<defName>STR_Stirfrymeal</defName>
-		<label>Cook four strange stir-fried meals</label>
-		<description>Cooks a stir-fried meal from a combination of strange meat and raw plant ingredients. \n\nMakes enough for 4 meals.  \n\nFood Effects: Manipulation and Blood Filtration.</description>
-		<jobString>Cooking strange stir-fried meals.</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>1500</workAmount>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredients>
-			<li>
-				<filter>
-				  <categories>
-					<li>ROM_StrangeMeatRaw</li>
-				  </categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>
-				           <li>CookingSupplies</li>
-				</categories>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<products>
-			<STR_stirfry>4</STR_stirfry>
-		</products>
-		<skillRequirements>
-			<Cooking>10</Cooking>
-		</skillRequirements>
-		<recipeUsers>
-    		    <li>ElectricStove</li>
-		    <li>FueledStove</li>
-     		</recipeUsers>
-	</RecipeDef>
-	
-	<!-- Stew -->
-	<RecipeDef ParentName="CookMealBase" Name="STR_Cookstewpot">
-		<defName>STR_Cookstewpot</defName>
-		<label>Cook eight pots of strange stew</label>
-		<description>Slow cooks a pot of stew from a combination of strange meat and raw plant ingredients. \n\nMakes enough for 8 meals. \n\nFood Effects: Consciousness, Metabolism, Blood Filtration, and Blood Pumping.</description>
-		<jobString>Slow cooking strange stew.</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>2000</workAmount>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredients>
-			<li>
-				<filter>
-				  <categories>
-					<li>ROM_StrangeMeatRaw</li>
-				  </categories>
-				</filter>
-				<count>4</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>
-			           	<li>CookingSupplies</li>
-					</categories>
-				</filter>
-				<count>4</count>
-			</li>
-		</ingredients>
-		<products>
-			<STR_bowlstew>8</STR_bowlstew>
-		</products>
-		<skillRequirements>
-			<Cooking>15</Cooking>
-		</skillRequirements>
-		<recipeUsers>
-     		    <li>ElectricStove</li>
-		    <li>FueledStove</li>
-   	     </recipeUsers>
-	</RecipeDef>
-	
-	<!-- Tacos -->
-	<RecipeDef ParentName="CookMealBase">
-      <defName>STR_CookTacos</defName>
-      <label>Cook five strange tacos</label>
-      <description>strange meat and Cheese in a corn shell. Requires strange meat, cheese, and cornmeal to make. \n\n Makes 5 servings. \n\nFood Effects: Manipulation and Metabolism.</description>
-      <jobString>Preparing strange tacos.</jobString>  
-      <allowMixingIngredients>true</allowMixingIngredients>
-      <ingredients>
-         <li>
-            <filter>
-               <thingDefs>
-                  <li>Cornmeal</li>
-               </thingDefs>
-            </filter>
-            <count>10</count>
-         </li>
-		<li>
-            <filter>
-               <thingDefs>
-                  <li>cheese</li>
-               </thingDefs>
-            </filter>
-            <count>4</count>
-         </li>
-	     <li>
-		<filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-		</filter>
-		<count>10</count>
-		</li>
-      </ingredients>
-      <products>
-         <STR_Tacos>5</STR_Tacos>
-      </products>
-      <fixedIngredientFilter>
-         <thingDefs>
-            <li>Cornmeal</li>
-			 <li>cheese</li>
-          </thingDefs>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
-      </fixedIngredientFilter>
-      <workAmount>1000</workAmount>
-      <workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <effectWorking>Cook</effectWorking>
-   	 <soundWorking>Recipe_CookMeal</soundWorking>
-	<recipeUsers>
-         <li>ElectricStove</li>
-	    <li>FueledStove</li>
-      </recipeUsers>
-		<skillRequirements>
-			<Cooking>7</Cooking>
-		</skillRequirements>
-      </RecipeDef>
-
-	<!-- Salted Meat -->
-	<RecipeDef ParentName="CookMealBase">
-	<defName>STR_SaltMeat</defName>
-	<label>Salt ten strange meats</label>
-	<description>Preserve strange meats in salt to prevent spoiling.</description>
-	<jobString>Salting strange meat.</jobString>
-	<workSpeedStat>CookSpeed</workSpeedStat>
-	<workAmount>1000</workAmount>
-		<effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>          
-	<allowMixingIngredients>true</allowMixingIngredients>
+  <!-- Stirfry -->
+  <RecipeDef ParentName="CookMealBase" Name="STR_Stirfrymeal">
+    <defName>STR_Stirfrymeal</defName>
+    <label>Cook four strange stir-fried meals</label>
+    <description>Cooks a stir-fried meal from a combination of strange meat and raw plant ingredients. \n\nMakes enough for 4 meals.  \n\nFood Effects: Manipulation and Blood Filtration.</description>
+    <jobString>Cooking strange stir-fried meals.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>1500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
       <li>
         <filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>CookingSupplies</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>PlantFoodRaw</li>
+        <li>CookingSupplies</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>PlantFoodRaw</li>
+        <li>CookingSupplies</li>
+      </categories>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <STR_stirfry>4</STR_stirfry>
+    </products>
+    <skillRequirements>
+      <Cooking>10</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <!-- Stew -->
+  <RecipeDef ParentName="CookMealBase" Name="STR_Cookstewpot">
+    <defName>STR_Cookstewpot</defName>
+    <label>Cook eight pots of strange stew</label>
+    <description>Slow cooks a pot of stew from a combination of strange meat and raw plant ingredients. \n\nMakes enough for 8 meals. \n\nFood Effects: Consciousness, Metabolism, Blood Filtration, and Blood Pumping.</description>
+    <jobString>Slow cooking strange stew.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>2000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>CookingSupplies</li>
+          </categories>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>PlantFoodRaw</li>
+        <li>CookingSupplies</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>PlantFoodRaw</li>
+        <li>CookingSupplies</li>
+      </categories>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <STR_bowlstew>8</STR_bowlstew>
+    </products>
+    <skillRequirements>
+      <Cooking>15</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  <!-- Tacos -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>STR_CookTacos</defName>
+    <label>Cook five strange tacos</label>
+    <description>strange meat and Cheese in a corn shell. Requires strange meat, cheese, and cornmeal to make. \n\n Makes 5 servings. \n\nFood Effects: Manipulation and Metabolism.</description>
+    <jobString>Preparing strange tacos.</jobString>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cornmeal</li>
+          </thingDefs>
         </filter>
         <count>10</count>
       </li>
-	<li>
-	  <filter>
-		<thingDefs>
-			<li>ChunkSalt</li>
-		</thingDefs>
-	  </filter>
-		<count>5</count>
-	</li>
-	</ingredients>
-	<fixedIngredientFilter>
+      <li>
+        <filter>
           <thingDefs>
-			<li>ChunkSalt</li>
-		</thingDefs>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-	  <specialFiltersToDisallow>
-        <li>AllowPlantFood</li>
-        <li>AllowNonSmeltableWeapons</li>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
+            <li>cheese</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <STR_Tacos>5</STR_Tacos>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cornmeal</li>
+        <li>cheese</li>
+      </thingDefs>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>Cornmeal</li>
+        <li>cheese</li>
+      </thingDefs>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Cooking>7</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+  <!-- Salted Meat -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>STR_SaltMeat</defName>
+    <label>Salt ten strange meats</label>
+    <description>Preserve strange meats in salt to prevent spoiling.</description>
+    <jobString>Salting strange meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkSalt</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ChunkSalt</li>
+      </thingDefs>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>ChunkSalt</li>
+      </thingDefs>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
       <disallowedThingDefs>
         <li>STR_SaltedMeat</li>
+        <li>Meat_Human</li>
       </disallowedThingDefs>
-	</fixedIngredientFilter>
-	<products>
-	  <STR_SaltedMeat>10</STR_SaltedMeat>
-	</products>
-    <defaultIngredientFilter>
-	  <thingDefs>		
-		<li>ChunkSalt</li>
-	 </thingDefs>
-	  <categories>
-		<li>ROM_StrangeMeatRaw</li>
-	  </categories>
     </defaultIngredientFilter>
-	<workSkill>Cooking</workSkill>
-	<recipeUsers>
-         <li>Canningstove</li>
-         <li>HandCanningstove</li>
+    <products>
+      <STR_SaltedMeat>10</STR_SaltedMeat>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>Canningstove</li>
+      <li>HandCanningstove</li>
     </recipeUsers>
-</RecipeDef>
-
-	<!-- Kabob -->
-	<RecipeDef ParentName="CookMealBase">
+  </RecipeDef>
+  <!-- Kabob -->
+  <RecipeDef ParentName="CookMealBase">
     <defName>STR_GrillKabob</defName>
     <label>Grill two strange kabobs</label>
     <description>strange meats and vegetables skewered on a stick and grilled to perfection.</description>
@@ -233,11 +279,11 @@
         </filter>
         <count>0.3</count>
       </li>
-	  <li>
+      <li>
         <filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
         </filter>
         <count>0.3</count>
       </li>
@@ -247,32 +293,32 @@
     </products>
     <fixedIngredientFilter>
       <categories>
+        <li>ROM_StrangeMeatRaw</li>
         <li>PlantFoodRaw</li>
       </categories>
-      <specialFiltersToDisallow>
-        <li>AllowPlantFood</li>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <categories>
+        <li>ROM_StrangeMeatRaw</li>
         <li>PlantFoodRaw</li>
       </categories>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
       <disallowedThingDefs>
-           <li>Meat_Megaspider</li>
-     </disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
-	<recipeUsers>
-         <li>ElectricStove</li>
-	    <li>FueledStove</li>
-	    <li>Campfire</li>
-  	    <li>VG_Campfire</li>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Campfire</li>
+      <li>VG_Campfire</li>
     </recipeUsers>
   </RecipeDef>
-
-	<!-- Grilled Steak -->
-	<RecipeDef ParentName="CookMealBase">
+  <!-- Grilled Steak -->
+  <RecipeDef ParentName="CookMealBase">
     <defName>STR_Grillsteak</defName>
     <label>Grill two strange steaks</label>
     <description>strange meat that has been cooked over a grill. //nMakes 2 strange Steaks.</description>
@@ -286,9 +332,9 @@
     <ingredients>
       <li>
         <filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
         </filter>
         <count>0.5</count>
       </li>
@@ -297,276 +343,242 @@
       <STR_Grilledsteak>2</STR_Grilledsteak>
     </products>
     <fixedIngredientFilter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-      <specialFiltersToDisallow>
-        <li>AllowPlantFood</li>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
       <disallowedThingDefs>
-            <li>Meat_Megaspider</li>
-    </disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
-	<recipeUsers>
-         <li>ElectricStove</li>
-	    <li>FueledStove</li>
-  	    <li>Campfire</li>
- 	    <li>VG_Campfire</li>
-   </recipeUsers>
-  </RecipeDef>
-  
-	<!-- Pizza -->
-    <RecipeDef ParentName="CookMealBase">
-      <defName>STR_Bakepizza</defName>
-      <label>Bake three strange pizzas</label>
-      <description>Bake strange pizza. \n\nMakes 3 servings. \n\nFood Effects: Consciousness and Metabolism.</description>
-      <jobString>Baking strange pizza.</jobString>  
-      <allowMixingIngredients>true</allowMixingIngredients>
-      <ingredients>
-         <li>
-            <filter>
-               <thingDefs>
-                  <li>Flour</li>
-               </thingDefs>
-            </filter>
-            <count>10</count>
-         </li>
-		<li>
-            <filter>
-               <thingDefs>
-                  <li>cheese</li>
-               </thingDefs>
-            </filter>
-            <count>6</count>
-         </li>
-	     <li>
-		<filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-		</filter>
-		<count>10</count>
-		</li>
-      </ingredients>
-      <products>
-         <STR_pizza>3</STR_pizza>
-      </products>
-      <fixedIngredientFilter>
-         <thingDefs>
-            <li>Flour</li>
-			<li>cheese</li>
-          </thingDefs>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
-      </fixedIngredientFilter>
-    <defaultIngredientFilter>
-         <thingDefs>
-            <li>Flour</li>
-			<li>cheese</li>
-         </thingDefs>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-      <disallowedCategories>
-        <li>EggsFertilized</li>
-      </disallowedCategories>
-    </defaultIngredientFilter>
-      <workAmount>750</workAmount>
-      <workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <effectWorking>Cook</effectWorking>
-   	 <soundWorking>Recipe_CookMeal</soundWorking>
-      <recipeUsers>
-        <li>Oven</li>
-        <li>ElectricOven</li>
-	 </recipeUsers>
-		<skillRequirements>
-			<Cooking>8</Cooking>
-		</skillRequirements>
-      </RecipeDef>
-	
-	<!-- Meat Pie -->
-	<RecipeDef ParentName="CookMealBase">
-	<defName>STR_BakeMeatPie</defName>
-	<label>Bake two strange meat pies</label>
-	<description>Bake a tasty strange pie. \n\nMakes 2 pies.</description>
-	<jobString>Baking strange pie.</jobString>
-	<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<workAmount>1000</workAmount>
-    <soundWorking>Recipe_CookMeal</soundWorking>          <allowMixingIngredients>true</allowMixingIngredients>
-	<recipeUsers>
-         <li>Oven</li>
-         <li>Campfire</li>
-         <li>ElectricOven</li>
- 	    <li>VG_Campfire</li>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Campfire</li>
+      <li>VG_Campfire</li>
     </recipeUsers>
-	<ingredients>
-	  <li>
-	    <filter>
-	      <thingDefs>
-	        <li>Flour</li>
-	      </thingDefs>
-	    </filter>
-	    <count>6</count>
-	  </li>
-	<li>
-	    <filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-	    </filter>
-	    <count>10</count>
-	  </li>
-	</ingredients>
-	<products>
-	  <STR_meatpie>2</STR_meatpie>
-	</products>
-		<fixedIngredientFilter>
-		      <thingDefs>
-	     			<li>Flour</li>
-	      	</thingDefs>
-			  <categories>
-				<li>ROM_StrangeMeatRaw</li>
-			  </categories>
-	        	<specialFiltersToDisallow>
-       		 	<li>AllowRotten</li>
-     		    	</specialFiltersToDisallow>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>
-		      <thingDefs>
-	     			<li>Flour</li>
-	      	</thingDefs>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-			<disallowedThingDefs>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-			</disallowedThingDefs>
-		</defaultIngredientFilter>
-		<workSkill>Cooking</workSkill>
-	</RecipeDef>
-  
-	<!-- Cheeseburger -->
-	<RecipeDef ParentName="CookMealBase">
-      <defName>STR_Cookgrilledsandwich</defName>
-      <label>Cook two strange cheeseburgers</label>
-      <description>A sandwich made of bread, strange meat, and cheese. \n\nMakes 2 servings. \n\nFood Effects: Metabolism.</description>
-      <jobString>Grilling strange sandwich.</jobString>  
-      <allowMixingIngredients>true</allowMixingIngredients>
-      <ingredients>
-         <li>
-            <filter>
-               <thingDefs>
-                  <li>Bread</li>
-               </thingDefs>
-            </filter>
-            <count>2</count>
-         </li>
-		<li>
-            <filter>
-               <thingDefs>
-                  <li>cheese</li>
-               </thingDefs>
-            </filter>
-            <count>2</count>
-         </li>
-	     <li>
-			<filter>
-			  <categories>
-				<li>ROM_StrangeMeatRaw</li>
-			  </categories>
-			</filter>
-			<count>6</count>
-		</li>
-      </ingredients>
-      <products>
-         <STR_grilledmeat>2</STR_grilledmeat>
-      </products>
-      <fixedIngredientFilter>
-         <thingDefs>
-            <li>Bread</li>
-		 <li>cheese</li>
+  </RecipeDef>
+  <!-- Pizza -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>STR_Bakepizza</defName>
+    <label>Bake three strange pizzas</label>
+    <description>Bake strange pizza. \n\nMakes 3 servings. \n\nFood Effects: Consciousness and Metabolism.</description>
+    <jobString>Baking strange pizza.</jobString>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Flour</li>
           </thingDefs>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
-      </fixedIngredientFilter>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>cheese</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <STR_pizza>3</STR_pizza>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>cheese</li>
+        <li>Flour</li>
+      </thingDefs>
+    </fixedIngredientFilter>
     <defaultIngredientFilter>
-         <thingDefs>
-            <li>Bread</li>
-		 <li>cheese</li>
-         </thingDefs>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>cheese</li>
+        <li>Flour</li>
+      </thingDefs>
       <disallowedCategories>
-        <li>EggsFertilized</li>
+        <li>MeatRaw</li>
       </disallowedCategories>
       <disallowedThingDefs>
-         <li>Meat_Megaspider</li>
-     </disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
-
-      <workAmount>1000</workAmount>
-      <workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <effectWorking>Cook</effectWorking>
-   	 <soundWorking>Recipe_CookMeal</soundWorking>
-	<recipeUsers>
-         <li>ElectricStove</li>
-	    <li>FueledStove</li>
-      </recipeUsers>
-		<skillRequirements>
-			<Cooking>4</Cooking>
-		</skillRequirements>
-      </RecipeDef>
-  
-  
-	<RecipeDef Name="STR_CookMealBase" Abstract="True">
-		<fixedIngredientFilter>
-			<categories>
-				<li>ROM_StrangeMeatRaw</li>
-				<li>PlantFoodRaw</li>
-				<li>AnimalProductRaw</li>
-			</categories>
-			<specialFiltersToDisallow>
-				<li>AllowPlantFood</li>
-			</specialFiltersToDisallow>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>
-			<categories>
-				<li>ROM_StrangeMeatRaw</li>
-				<li>PlantFoodRaw</li>
-				<li>AnimalProductRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>InsectJelly</li>
-			</disallowedThingDefs>
-		</defaultIngredientFilter>
-		<workSkill>Cooking</workSkill>
-	</RecipeDef>
-
-	<!-- Pemmican -->
-	<RecipeDef Name="STR_MakestrangePemmican">
+    <workAmount>750</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <recipeUsers>
+      <li>Oven</li>
+      <li>ElectricOven</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+  <!-- Meat Pie -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>STR_BakeMeatPie</defName>
+    <label>Bake two strange meat pies</label>
+    <description>Bake a tasty strange pie. \n\nMakes 2 pies.</description>
+    <jobString>Baking strange pie.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <workAmount>1000</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+      <li>Oven</li>
+      <li>Campfire</li>
+      <li>ElectricOven</li>
+      <li>VG_Campfire</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Flour</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <STR_meatpie>2</STR_meatpie>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>Flour</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>Flour</li>
+      </thingDefs>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  <!-- Cheeseburger -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>STR_Cookgrilledsandwich</defName>
+    <label>Cook two strange cheeseburgers</label>
+    <description>A sandwich made of bread, strange meat, and cheese. \n\nMakes 2 servings. \n\nFood Effects: Metabolism.</description>
+    <jobString>Grilling strange sandwich.</jobString>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bread</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>cheese</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <products>
+      <STR_grilledmeat>2</STR_grilledmeat>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>cheese</li>
+        <li>Bread</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+      </categories>
+      <thingDefs>
+        <li>cheese</li>
+        <li>Bread</li>
+      </thingDefs>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Cooking>4</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+  <RecipeDef Name="STR_CookMealBase" Abstract="True">
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  <!-- Pemmican -->
+  <RecipeDef Name="STR_MakestrangePemmican">
     <defName>STR_MakeStrangePemmican</defName>
     <label>Make strange pemmican</label>
     <description>Make strange pemmican, a preserved combination of strange meat and organic food. It doesn't taste amazing, but lasts a year without refrigeration.</description>
@@ -581,9 +593,9 @@
     <ingredients>
       <li>
         <filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
         </filter>
         <count>0.25</count>
       </li>
@@ -601,37 +613,35 @@
       <STR_Pemmican>16</STR_Pemmican>
     </products>
     <fixedIngredientFilter>
-	  <categories>
-		<li>ROM_StrangeMeatRaw</li>
-		<li>PlantFoodRaw</li>
-	  </categories> 
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>PlantFoodRaw</li>
+      </categories>
       <specialFiltersToDisallow>
         <li>AllowPlantFood</li>
       </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
-	  <categories>
-		<li>ROM_StrangeMeatRaw</li>
-		<li>PlantFoodRaw</li>
-	  </categories> 
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>PlantFoodRaw</li>
+      </categories>
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
     <researchPrerequisite>Pemmican</researchPrerequisite>
   </RecipeDef>
-
-	<RecipeDef ParentName="STR_MakestrangePemmican">
+  <RecipeDef ParentName="STR_MakestrangePemmican">
     <defName>STR_MakeStrangePemmicanCampfire</defName>
     <workAmount>1400</workAmount>
-	<recipeUsers>
-         <li>ElectricStove</li>
-	    <li>FueledStove</li>
-  	    <li>Campfire</li>
- 	    <li>VG_Campfire</li>
-   </recipeUsers>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Campfire</li>
+      <li>VG_Campfire</li>
+    </recipeUsers>
   </RecipeDef>
-
-	<!-- Survival Meal -->
-	<RecipeDef ParentName="STR_CookMealBase">
+  <!-- Survival Meal -->
+  <RecipeDef ParentName="STR_CookMealBase">
     <defName>STR_CookStrangeMealSurvival</defName>
     <label>cook packaged survival strange meal</label>
     <description>Cooks a packaged survival strange meal from a combination of strange meat and organic ingredients. Much of the ingredients are wasted.</description>
@@ -644,9 +654,9 @@
     <ingredients>
       <li>
         <filter>
-		  <categories>
-			<li>ROM_StrangeMeatRaw</li>
-		  </categories>
+          <categories>
+            <li>ROM_StrangeMeatRaw</li>
+          </categories>
         </filter>
         <count>0.5</count>
       </li>
@@ -663,16 +673,35 @@
     <products>
       <STR_SurvivalPack>1</STR_SurvivalPack>
     </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>AnimalProductRaw</li>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>ROM_StrangeMeatRaw</li>
+        <li>AnimalProductRaw</li>
+        <li>PlantFoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
     <skillRequirements>
-	  <Cooking>8</Cooking>
+      <Cooking>8</Cooking>
     </skillRequirements>
-    <researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>	
-	<recipeUsers>
-         <li>ElectricStove</li>
-	    <li>FueledStove</li>
-  	    <li>Campfire</li>
- 	    <li>VG_Campfire</li>
-   </recipeUsers>
+    <researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Campfire</li>
+      <li>VG_Campfire</li>
+    </recipeUsers>
   </RecipeDef>
-  
 </Defs>

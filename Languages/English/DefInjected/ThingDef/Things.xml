@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Cheeseburger -->
+
+  <STR_grilledmeat.label>Strange Cheese Burger</STR_grilledmeat.label>
+  <STR_grilledmeat.description>Two slices of bread with grilled strange meat and cheese melt. \n\nFood Effects: Metabolism.</STR_grilledmeat.description>
+
+
+  <!-- Pizza -->
+
+  <STR_pizza.label>Strange pizza</STR_pizza.label>
+  <STR_pizza.description>Strangepizza in 30 minutes or less! \n\nFood Effects: Consciousness and Metabolism.</STR_pizza.description>
+
+
+  <!-- Tacos -->
+
+  <STR_Tacos.label>Strange Tacos</STR_Tacos.label>
+  <STR_Tacos.description>Strange Meat and Cheese in a Corn shell. \n\nFood Effects: Manipulation and Metabolism.</STR_Tacos.description>
+
+
+  <!-- Grilled Steak -->
+
+  <STR_Grilledsteak.label>Grilled Strange Steak</STR_Grilledsteak.label>
+  <STR_Grilledsteak.description>Strange meat that has been cooked over a grill.</STR_Grilledsteak.description>
+
+
+  <!-- Kabob -->
+
+  <STR_Kabob.label>Grilled Strange Kabob</STR_Kabob.label>
+  <STR_Kabob.description>Strange meats and Vegetables skewered on a stick and grilled to perfection.</STR_Kabob.description>
+
+
+  <!-- Meat Pie -->
+
+  <STR_meatpie.label>Strange meat pie</STR_meatpie.label>
+  <STR_meatpie.description>A simple baked pie with a filling of strange meat.</STR_meatpie.description>
+
+
+  <!-- Stew -->
+
+  <STR_bowlstew.label>Bowl of strange stew</STR_bowlstew.label>
+  <STR_bowlstew.description>A bowl of slow cooking strange stew. \n\nFood Effects: Consciousness, Metabolism, Blood Filtration, and Blood Pumping.</STR_bowlstew.description>
+
+
+  <!-- Stirfry -->
+
+  <STR_stirfry.label>Strange stirfry</STR_stirfry.label>
+  <STR_stirfry.description>Cooking technique in which ingredients are fried in a small amount of very hot oil. \n\nFood Effects: Manipulation and Blood Filtration.</STR_stirfry.description>
+
+
+  <!-- Salted Meat -->
+
+  <STR_SaltedMeat.label>Salted strange meat</STR_SaltedMeat.label>
+  <STR_SaltedMeat.description>Strange meat that has been cured with salt.</STR_SaltedMeat.description>
+
+
+  <!-- Pemmican -->
+
+  <STR_Pemmican.label>strange pemmican</STR_Pemmican.label>
+  <STR_Pemmican.description>A preserved mashed mixture of strange fat and plant food. Tastes bland, but not offensive. It lasts a very long time without refrigeration.</STR_Pemmican.description>
+
+
+  <!-- Survival Meal -->
+
+  <STR_SurvivalPack.label>packaged survival strange meal</STR_SurvivalPack.label>
+  <STR_SurvivalPack.description>A high-quality strange packaged meal, manufactured for use in survival situations.</STR_SurvivalPack.description>
+
+
+</LanguageData>

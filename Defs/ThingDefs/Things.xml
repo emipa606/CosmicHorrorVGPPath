@@ -1,243 +1,234 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<!-- Cheeseburger -->
-	<ThingDef ParentName="VG_MealRottable">
-      <defName>STR_grilledmeat</defName>
-      <label>Strange Cheese Burger</label>
-      <description>Two slices of bread with grilled strange meat and cheese melt. \n\nFood Effects: Metabolism.</description>
-      <graphicData>
+  <!-- Cheeseburger -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_grilledmeat</defName>
+    <label>Strange Cheese Burger</label>
+    <description>Two slices of bread with grilled strange meat and cheese melt. \n\nFood Effects: Metabolism.</description>
+    <graphicData>
       <texPath>STR_grilledmeat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
- 	    <Nutrition>0.90</Nutrition>
-         <MarketValue>25</MarketValue>
-      </statBases>
-      <ingestible>
-        <preferability>MealFine</preferability>
- 		<tasteThought>AteFineMeal</tasteThought>
-         <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <Nutrition>0.90</Nutrition>
+      <MarketValue>25</MarketValue>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>HedGmeat</hediffDef>
           <severity>0.25</severity>
         </li>
       </outcomeDoers>
-      </ingestible>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-
-	<!-- Pizza -->
-	<ThingDef ParentName="VG_MealRottable">
-      <defName>STR_pizza</defName>
-      <label>Strange pizza</label>
-      <description>Strangepizza in 30 minutes or less! \n\nFood Effects: Consciousness and Metabolism.</description>
-      <graphicData>
+  </ThingDef>
+  <!-- Pizza -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_pizza</defName>
+    <label>Strange pizza</label>
+    <description>Strangepizza in 30 minutes or less! \n\nFood Effects: Consciousness and Metabolism.</description>
+    <graphicData>
       <texPath>STR_pizza</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
-         <MarketValue>25</MarketValue>
-     <Nutrition>1.00</Nutrition>
-         <WorkToMake>500</WorkToMake>
-      </statBases>
-      <ingestible>
-       <preferability>MealLavish</preferability>
- 	<tasteThought>AteLavishMeal</tasteThought>
-         <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <Nutrition>1.00</Nutrition>
+      <WorkToMake>500</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>HedPizza</hediffDef>
           <severity>0.25</severity>
         </li>
       </outcomeDoers>
-      </ingestible>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-   
-	<!-- Tacos -->
-	<ThingDef ParentName="VG_MealRottable">
-      <defName>STR_Tacos</defName>
-      <label>Strange Tacos</label>
-      <description>Strange Meat and Cheese in a Corn shell. \n\nFood Effects: Manipulation and Metabolism.</description>
-      <graphicData>
+  </ThingDef>
+  <!-- Tacos -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_Tacos</defName>
+    <label>Strange Tacos</label>
+    <description>Strange Meat and Cheese in a Corn shell. \n\nFood Effects: Manipulation and Metabolism.</description>
+    <graphicData>
       <texPath>STR_Tacos</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
-         <Nutrition>0.60</Nutrition>
-         <MarketValue>15</MarketValue>
-      </statBases>
-      <ingestible>
-         <preferability>MealFine</preferability>
-		<tasteThought>AteFineMeal</tasteThought>
-         <joy>0.2</joy>
-        <joyKind>Gluttonous</joyKind>
-       <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <Nutrition>0.60</Nutrition>
+      <MarketValue>15</MarketValue>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteFineMeal</tasteThought>
+      <joy>0.2</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>HedTacos</hediffDef>
           <severity>0.25</severity>
         </li>
       </outcomeDoers>
-      </ingestible>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-
-	<!-- Grilled Steak -->
-	<ThingDef ParentName="VG_MealRottable">
-      <defName>STR_Grilledsteak</defName>
-      <label>Grilled Strange Steak</label>
-      <description>Strange meat that has been cooked over a grill.</description>
-      <graphicData>
+  </ThingDef>
+  <!-- Grilled Steak -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_Grilledsteak</defName>
+    <label>Grilled Strange Steak</label>
+    <description>Strange meat that has been cooked over a grill.</description>
+    <graphicData>
       <texPath>STR_Grilledsteak</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
       <Nutrition>0.6</Nutrition>
-         <MarketValue>18</MarketValue>
-         <WorkToMake>1000</WorkToMake>
-      </statBases>
-      <ingestible>
+      <MarketValue>18</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <ingestible>
       <preferability>MealSimple</preferability>
-         <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
-      </ingestible>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-	
-	<!-- Kabob -->
-	<ThingDef ParentName="VG_MealRottable">
-      <defName>STR_Kabob</defName>
-      <label>Grilled Strange Kabob</label>
-      <description>Strange meats and Vegetables skewered on a stick and grilled to perfection.</description>
-      <graphicData>
+  </ThingDef>
+  <!-- Kabob -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_Kabob</defName>
+    <label>Grilled Strange Kabob</label>
+    <description>Strange meats and Vegetables skewered on a stick and grilled to perfection.</description>
+    <graphicData>
       <texPath>STR_Kabob</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
-         <MarketValue>18</MarketValue>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>18</MarketValue>
       <Nutrition>0.70</Nutrition>
-         <WorkToMake>1000</WorkToMake>
-      </statBases>
-      <ingestible>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <ingestible>
       <preferability>MealSimple</preferability>
-         <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
-      </ingestible>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-   
-	<!-- Meat Pie -->
-    <ThingDef ParentName="VG_MealRottable">
-      <defName>STR_meatpie</defName>
-      <label>Strange meat pie</label>
-      <description>A simple baked pie with a filling of strange meat.</description>
-      <graphicData>
+  </ThingDef>
+  <!-- Meat Pie -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_meatpie</defName>
+    <label>Strange meat pie</label>
+    <description>A simple baked pie with a filling of strange meat.</description>
+    <graphicData>
       <texPath>STR_meatpie</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
-       <Nutrition>0.70</Nutrition>
-        <MarketValue>12</MarketValue>
-         <WorkToMake>1000</WorkToMake>
-      </statBases>
-      <ingestible>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <Nutrition>0.70</Nutrition>
+      <MarketValue>12</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <ingestible>
       <preferability>MealSimple</preferability>
-         <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
-      </ingestible>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-	
-	<!-- Stew -->
-	<ThingDef ParentName="VG_MealRottable">
-      <defName>STR_bowlstew</defName>
-      <label>Bowl of strange stew</label>
-      <description>A bowl of slow cooking strange stew. \n\nFood Effects: Consciousness, Metabolism, Blood Filtration, and Blood Pumping.</description>
-      <graphicData>
+  </ThingDef>
+  <!-- Stew -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_bowlstew</defName>
+    <label>Bowl of strange stew</label>
+    <description>A bowl of slow cooking strange stew. \n\nFood Effects: Consciousness, Metabolism, Blood Filtration, and Blood Pumping.</description>
+    <graphicData>
       <texPath>STR_bowlstew</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
-         <MarketValue>25</MarketValue>
-         <WorkToMake>1500</WorkToMake>
-         <Nutrition>1.00</Nutrition>
-     </statBases>
-      <ingestible>
-       <preferability>MealLavish</preferability>
-	<tasteThought>AteLavishMeal</tasteThought>
-         <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <WorkToMake>1500</WorkToMake>
+      <Nutrition>1.00</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>HedStew</hediffDef>
           <severity>0.25</severity>
         </li>
       </outcomeDoers>
-      </ingestible>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-
-	<!-- Stirfry -->
-	<ThingDef ParentName="VG_MealRottable">
-      <defName>STR_stirfry</defName>
-      <label>Strange stirfry</label>
-      <description>Cooking technique in which ingredients are fried in a small amount of very hot oil. \n\nFood Effects: Manipulation and Blood Filtration.</description>
-      <graphicData>
+  </ThingDef>
+  <!-- Stirfry -->
+  <ThingDef ParentName="VG_MealRottable">
+    <defName>STR_stirfry</defName>
+    <label>Strange stirfry</label>
+    <description>Cooking technique in which ingredients are fried in a small amount of very hot oil. \n\nFood Effects: Manipulation and Blood Filtration.</description>
+    <graphicData>
       <texPath>STR_stirfry</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-      <statBases>
-         <DeteriorationRate>10</DeteriorationRate>
-         <MarketValue>25</MarketValue>
-         <WorkToMake>10000</WorkToMake>
-      	<Nutrition>0.90</Nutrition>
-      </statBases>
-      <ingestible>
+    <statBases>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <WorkToMake>10000</WorkToMake>
+      <Nutrition>0.90</Nutrition>
+    </statBases>
+    <ingestible>
       <preferability>MealFine</preferability>
-		<tasteThought>AteFineMeal</tasteThought>
-         <ingestEffect>EatVegetarian</ingestEffect>
-         <ingestSound>Meal_Eat</ingestSound>
-       <outcomeDoers>
+      <tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>HedStirfry</hediffDef>
           <severity>0.25</severity>
         </li>
       </outcomeDoers>
-     </ingestible>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-   </ThingDef>
-	
-	<!-- Salted Meat -->
-	<ThingDef ParentName="VG_PlantProductBase">
+  </ThingDef>
+  <!-- Salted Meat -->
+  <ThingDef ParentName="VG_PlantProductBase">
     <defName>STR_SaltedMeat</defName>
     <label>Salted strange meat</label>
     <description>Strange meat that has been cured with salt.</description>
@@ -250,7 +241,7 @@
     <statBases>
       <MarketValue>5</MarketValue>
       <Nutrition>0.05</Nutrition>
-   		     <Mass>0.025</Mass>
+      <Mass>0.025</Mass>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -261,16 +252,16 @@
       <foodType>Meat</foodType>
       <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
       <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
-	  <optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
+      <optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
       <ingestEffect>EatVegetarian</ingestEffect>
       <preferability>MealAwful</preferability>
- 	 <tasteThought></tasteThought>
+      <tasteThought>
+      </tasteThought>
       <ingestSound>Meal_Eat</ingestSound>
-  </ingestible>
+    </ingestible>
   </ThingDef>
-    
-	<!-- Pemmican -->
-	<ThingDef ParentName="OrganicProductBase">
+  <!-- Pemmican -->
+  <ThingDef ParentName="OrganicProductBase">
     <defName>STR_Pemmican</defName>
     <label>strange pemmican</label>
     <thingClass>ThingWithComps</thingClass>
@@ -284,20 +275,20 @@
       <MarketValue>1.4</MarketValue>
       <Mass>0.018</Mass>
       <WorkToMake>700</WorkToMake>
-	<DeteriorationRate>2</DeteriorationRate>
-    <Nutrition>0.05</Nutrition>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Nutrition>0.05</Nutrition>
     </statBases>
     <ingestible>
       <foodType>Meal</foodType>
       <preferability>MealSimple</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
-	  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
-	</ingestible>
+      <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+    </ingestible>
     <thingCategories>
       <li>StrangeMeals</li>
     </thingCategories>
-	<tradeability>Sellable</tradeability>
+    <tradeability>Sellable</tradeability>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>70</daysToRotStart>
@@ -307,9 +298,8 @@
       <li Class="CompProperties_FoodPoisonable" />
     </comps>
   </ThingDef>
-  
-	<!-- Survival Meal -->
-	<ThingDef ParentName="MealBase">
+  <!-- Survival Meal -->
+  <ThingDef ParentName="MealBase">
     <defName>STR_SurvivalPack</defName>
     <label>packaged survival strange meal</label>
     <description>A high-quality strange packaged meal, manufactured for use in survival situations.</description>
@@ -322,7 +312,7 @@
       <MarketValue>24</MarketValue>
       <Mass>0.3</Mass>
       <WorkToMake>450</WorkToMake>
- 	  <Nutrition>0.9</Nutrition>
+      <Nutrition>0.9</Nutrition>
     </statBases>
     <ingestible>
       <preferability>MealSimple</preferability>
@@ -335,6 +325,5 @@
       <li>StrangeMeals</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
-	</ThingDef>
-
-	</Defs>
+  </ThingDef>
+</Defs>

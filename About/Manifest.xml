@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
   <identifier>CosmicHorrorVGPPath</identifier>
-  <version>1.0.7.0</version>
+  <version>1.0.8.0</version>
   <dependencies>
     <li>CoC-CosmicHorrors</li>
     <li>VGPGardenGourmet</li>
@@ -17,4 +17,3 @@
   <manifestUri>https://raw.githubusercontent.com/emipa606/CosmicHorrorVGPPath/master/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/emipa606/CosmicHorrorVGPPath/releases</downloadUri>
 </Manifest>
-
