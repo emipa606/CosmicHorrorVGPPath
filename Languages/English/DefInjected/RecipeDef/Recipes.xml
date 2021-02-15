@@ -1,85 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Stirfry -->
-
   <STR_Stirfrymeal.label>Cook four strange stir-fried meals</STR_Stirfrymeal.label>
   <STR_Stirfrymeal.description>Cooks a stir-fried meal from a combination of strange meat and raw plant ingredients. \n\nMakes enough for 4 meals.  \n\nFood Effects: Manipulation and Blood Filtration.</STR_Stirfrymeal.description>
   <STR_Stirfrymeal.jobString>Cooking strange stir-fried meals.</STR_Stirfrymeal.jobString>
-
-
   <!-- Stew -->
-
   <STR_Cookstewpot.label>Cook eight pots of strange stew</STR_Cookstewpot.label>
   <STR_Cookstewpot.description>Slow cooks a pot of stew from a combination of strange meat and raw plant ingredients. \n\nMakes enough for 8 meals. \n\nFood Effects: Consciousness, Metabolism, Blood Filtration, and Blood Pumping.</STR_Cookstewpot.description>
   <STR_Cookstewpot.jobString>Slow cooking strange stew.</STR_Cookstewpot.jobString>
-
-
   <!-- Tacos -->
-
   <STR_CookTacos.label>Cook five strange tacos</STR_CookTacos.label>
   <STR_CookTacos.description>strange meat and Cheese in a corn shell. Requires strange meat, cheese, and cornmeal to make. \n\n Makes 5 servings. \n\nFood Effects: Manipulation and Metabolism.</STR_CookTacos.description>
   <STR_CookTacos.jobString>Preparing strange tacos.</STR_CookTacos.jobString>
-
-
   <!-- Salted Meat -->
-
   <STR_SaltMeat.label>Salt ten strange meats</STR_SaltMeat.label>
   <STR_SaltMeat.description>Preserve strange meats in salt to prevent spoiling.</STR_SaltMeat.description>
   <STR_SaltMeat.jobString>Salting strange meat.</STR_SaltMeat.jobString>
-
-
   <!-- Kabob -->
-
   <STR_GrillKabob.label>Grill two strange kabobs</STR_GrillKabob.label>
   <STR_GrillKabob.description>strange meats and vegetables skewered on a stick and grilled to perfection.</STR_GrillKabob.description>
   <STR_GrillKabob.jobString>Grilling strange kabob.</STR_GrillKabob.jobString>
-
-
   <!-- Grilled Steak -->
-
   <STR_Grillsteak.label>Grill two strange steaks</STR_Grillsteak.label>
   <STR_Grillsteak.description>strange meat that has been cooked over a grill. //nMakes 2 strange Steaks.</STR_Grillsteak.description>
   <STR_Grillsteak.jobString>Grilling strange steak.</STR_Grillsteak.jobString>
-
-
   <!-- Pizza -->
-
   <STR_Bakepizza.label>Bake three strange pizzas</STR_Bakepizza.label>
   <STR_Bakepizza.description>Bake strange pizza. \n\nMakes 3 servings. \n\nFood Effects: Consciousness and Metabolism.</STR_Bakepizza.description>
   <STR_Bakepizza.jobString>Baking strange pizza.</STR_Bakepizza.jobString>
-
-
   <!-- Meat Pie -->
-
   <STR_BakeMeatPie.label>Bake two strange meat pies</STR_BakeMeatPie.label>
   <STR_BakeMeatPie.description>Bake a tasty strange pie. \n\nMakes 2 pies.</STR_BakeMeatPie.description>
   <STR_BakeMeatPie.jobString>Baking strange pie.</STR_BakeMeatPie.jobString>
-
-
   <!-- Cheeseburger -->
-
   <STR_Cookgrilledsandwich.label>Cook two strange cheeseburgers</STR_Cookgrilledsandwich.label>
   <STR_Cookgrilledsandwich.description>A sandwich made of bread, strange meat, and cheese. \n\nMakes 2 servings. \n\nFood Effects: Metabolism.</STR_Cookgrilledsandwich.description>
   <STR_Cookgrilledsandwich.jobString>Grilling strange sandwich.</STR_Cookgrilledsandwich.jobString>
-
-
   <!-- Pemmican -->
-
   <STR_MakeStrangePemmican.label>Make strange pemmican</STR_MakeStrangePemmican.label>
   <STR_MakeStrangePemmican.description>Make strange pemmican, a preserved combination of strange meat and organic food. It doesn't taste amazing, but lasts a year without refrigeration.</STR_MakeStrangePemmican.description>
   <STR_MakeStrangePemmican.jobString>Making pemmican.</STR_MakeStrangePemmican.jobString>
-
   <STR_MakeStrangePemmicanCampfire.label>Make strange pemmican</STR_MakeStrangePemmicanCampfire.label>
   <STR_MakeStrangePemmicanCampfire.description>Make strange pemmican, a preserved combination of strange meat and organic food. It doesn't taste amazing, but lasts a year without refrigeration.</STR_MakeStrangePemmicanCampfire.description>
   <STR_MakeStrangePemmicanCampfire.jobString>Making pemmican.</STR_MakeStrangePemmicanCampfire.jobString>
-
-
   <!-- Survival Meal -->
-
   <STR_CookStrangeMealSurvival.label>cook packaged survival strange meal</STR_CookStrangeMealSurvival.label>
   <STR_CookStrangeMealSurvival.description>Cooks a packaged survival strange meal from a combination of strange meat and organic ingredients. Much of the ingredients are wasted.</STR_CookStrangeMealSurvival.description>
   <STR_CookStrangeMealSurvival.jobString>Cooking survival meal.</STR_CookStrangeMealSurvival.jobString>
-
-
 </LanguageData>

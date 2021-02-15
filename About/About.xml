@@ -23,27 +23,48 @@
       <downloadUrl>https://ludeon.com/forums/index.php?topic=36926.msg378130#msg378130</downloadUrl>
     </li>
     <li>
-      <packageId>rimofmadness.callofcthulhu.cosmichorrors</packageId>
+      <packageId>Mlie.CallofCthulhuCosmicHorrors</packageId>
       <displayName>Call of Cthulhu - Cosmic Horrors</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/765890823</steamWorkshopUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2246088032</steamWorkshopUrl>
     </li>
   </modDependencies>
   <loadAfter>
     <li>dismarzero.VGP.VGPVegetableGarden</li>
     <li>dismarzero.VGP.VGPGardenGourmet</li>
-    <li>rimofmadness.callofcthulhu.cosmichorrors</li>
+    <li>Mlie.CallofCthulhuCosmicHorrors</li>
   </loadAfter>
-  <description>Adds strange versions of all Vegetable Garden Project-meals.
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  
+Adds strange versions of all Vegetable Garden Project-meals.
 
-General	
- • Add these recipes/meals: Pemmican, Packaged Survival Meal, Stir-Fry, Stew, Pizza, Salted Meat, Cheeseburger, Tacos, Meat Pie, Kabobs, Grilled Steak
- • Has added texture on the original textures to indicate strange-version.
- • Stats and nutritions are the same as the original meals.
- • Adds a Strange meal category for sorting.
+General
+[list]
+[*] Add these recipes/meals: Pemmican, Packaged Survival Meal, Stir-Fry, Stew, Pizza, Salted Meat, Cheeseburger, Tacos, Meat Pie, Kabobs, Grilled Steak
+[*] Has added texture on the original textures to indicate strange-version.
+[*] Stats and nutritions are the same as the original meals.
+[*] Adds a Strange meal category for sorting.
+[/list]
 
 Compatibilities
- • Compatible with existent saves and other mods.
- • Requires Vegetable Garden, VG Gourmet and of course Cosmic Horrors
+- Compatible with existent saves and other mods.
+- Requires Vegetable Garden, VG Gourmet and of course Cosmic Horrors
+ 
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/CosmicHorrorVGPPath][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
 
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
 </description>
 </ModMetaData>
+
