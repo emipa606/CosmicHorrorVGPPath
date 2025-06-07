@@ -1,5 +1,8 @@
 # Changelog for CosmicHorrorVGPPath
 
+1.5.0 - Updated the required mod reference
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests
 
 
