@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 2985942468
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 80afe914969e6ab4def8325bcbe21d88
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 80afe914969e6ab4def8325bcbe21d88
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_stirfry.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_meatpie.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_Kabob.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_Tacos.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_bowlstew.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_grilledmeat.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_Grilledsteak.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_SurvivalPack.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_pizza.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_StrangeMeatRaw.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_Pemmican.png
+- Assets/Data/Mlie.CosmicHorrorVGPPath/Textures/STR_SaltedMeat.png
+Dependencies: []
